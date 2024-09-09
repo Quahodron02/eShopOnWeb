@@ -8,7 +8,7 @@ env:
   RESOURCE-GROUP: rg-eshoponweb-westeurope
   LOCATION: westeurope
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: ${{ fromJson(secrets.AZURE_CREDENTIALS.subscriptionId) }}
+  SUBSCRIPTION-ID: ${{ fromJson(secrets.AZURE_CREDENTIALS).subscriptionId }}
   WEBAPP-NAME: devops-webapp-westeurope-2197028714
 
 
